@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.musicalstructureapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="12dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/music" />
+
+            <Button
+                android:id="@+id/addMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="12dp"
+                android:text="Add More" />
+        </RelativeLayout>
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="3"
+            android:layout_weight="5">
+
+
+            <LinearLayout
+                android:id="@+id/card1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/pop_music"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:padding="25dp"
+                    android:src="@drawable/musicicon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:text="pop music"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/card2"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/rock_music"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:padding="25dp"
+                    android:src="@drawable/musicicon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:text="Rock music"
+                    android:textAllCaps="true"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/card3"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/party_music"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:padding="25dp"
+                    android:src="@drawable/musicicon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="party music"
+                    android:textSize="23sp"
+                    android:textAllCaps="true"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/card4"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/artist"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:padding="25dp"
+                    android:src="@drawable/musicicon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textSize="23sp"
+                    android:text="artist" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/card5"
+                android:orientation="vertical"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="12dp">
+
+                <ImageView
+                    android:id="@+id/album"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:padding="25dp"
+                    android:src="@drawable/musicicon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="album"
+                    android:textSize="23sp"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>
